@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">[Osama]-MidTerm21</string>
+    <string name="bttnTo1">Go to activity 1</string>
+    <string name="bttnTo2">Go to activity 2</string>
+    <string name="bttnto3">Go to activity 3</string>
+    <string name="txtSubmit">Submit</string>
+    <string name="txtMale">Male</string>
+    <string name="txtFemale">Female</string>
+    <string name="txtBirthYear">Insert Birth Date Details</string>
+    <string name="txtHintAge">Enter age</string>
+    <string name="txtName">Insert your name</string>
+    <string name="txtHintName">Name..</string>
+    <string name="txtActivity1">This is activity 1</string>
+    <string name="txtActivity2">This is activity 2</string>
+    <string name="txtActivity3">This is activity 3</string>
+    <string name="txtStudent">Student</string>
+    <string name="txtInst">Instructor</string>
+    <string name="txtShowBig">Option 2</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity3"
+    android:descendantFocusability = "blocksDescendants"
+
+
+
+    >
+    <!-- basically the items in the list were not working cuz there were buttons
+    on them (which are hidden cuz I changed the style of the buttons) but when I added
+    "android:descendantFocusability = "blocksDescendants" " it converted the focus to the list items and not the buttons -->
+
+
+
+    <!-- Text View for the list view-->
+    <TextView
+        android:id="@+id/txtViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:scaleY="0.7"
+        android:scaleX="0.7"
+        android:gravity="center"
+         />
+
+    <!-- Vertical linear layout to order stuff vertically (like a vertical box) -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+
+        >
+
+        <!-- My list view-->
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="vertical"
+
+            />
+
+
+        <!--I created this text view to make space between the buttons and the list view
+        <TextView
+            android:id="@+id/txtUseless"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </TextView>
+        -->
+
+        <!-- horizontal layout to place my two navigation buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+
+
+            <Button
+                android:id="@+id/goToOneFrom3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_gravity="left"
+                android:layout_weight="5"
+                android:text="@string/bttnTo1"
+                style="?android:attr/buttonBarButtonStyle"
+
+                />
+
+
+            <Button
+                android:id="@+id/goToTwoFrom3"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right"
+                android:layout_marginStart="20dp"
+                android:layout_weight="5"
+                android:text="@string/bttnTo2"
+                style="?android:attr/buttonBarButtonStyle"
+
+                />
+
+
+        </LinearLayout>
+
+
+        <!-- style="?android:attr/buttonBarButtonStyle"  -> style to make buttons with no background -->
+
+    </LinearLayout>
+
+
+</RelativeLayout>
